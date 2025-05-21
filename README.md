@@ -35,30 +35,24 @@ File JavaScript menambahkan fungsionalitas interaktif:
 - Efek scroll pada header
 - Latar belakang dinamis dengan library particles.js
 
-## Use Case
-
-### 1. Pengguna Mengakses Website
-- Pengguna membuka website platform e-learning melalui browser.
-- Pengguna melihat halaman utama (beranda) dengan tampilan menarik dan menu navigasi.
-
-### 2. Menjelajahi Daftar Kursus
-- Pengguna memilih menu "Kursus" untuk melihat daftar kursus yang tersedia.
-- Pengguna dapat melihat deskripsi singkat, gambar, dan rating dari setiap kursus.
-
-### 3. Mencari Informasi Instruktur
-- Pengguna memilih menu "Instruktur" untuk mengetahui profil dan keahlian para pengajar.
-
-### 4. Mengakses Sumber Daya Tambahan
-- Pengguna memilih menu "Sumber Daya" untuk mendapatkan materi pembelajaran tambahan seperti artikel, ebook, atau video.
-
-### 5. Mengenal Platform
-- Pengguna memilih menu "Tentang Kami" untuk mengetahui visi, misi, dan informasi umum tentang platform e-learning.
-
-### 6. Navigasi Mobile
-- Jika diakses melalui perangkat mobile, pengguna dapat menggunakan tombol menu untuk menampilkan atau menyembunyikan navigasi.
-
-### 7. Interaksi Visual
-- Pengguna merasakan pengalaman visual yang dinamis berkat latar belakang partikel interaktif dan animasi pada elemen website.
-
 ## Fitur
-- Desain responsif yang berfungsi di semua
+- Desain responsif yang berfungsi di semua perangkat
+- Latar belakang interaktif dinamis menggunakan particles.js
+- Antarmuka modern dan bersih dengan animasi
+- Navigasi sederhana dengan penandaan bagian aktif
+- Kartu kursus dengan efek hover
+
+## Topik Web
+Website ini dirancang dengan tema Platform E-Learning yang menawarkan berbagai kursus online. Desainnya menekankan:
+- Kemudahan akses materi pembelajaran
+- Representasi visual dari konten kursus
+- Navigasi yang jelas dan alur pengguna yang intuitif
+- Estetika yang profesional namun menarik
+
+## Struktur Menu
+Menu sederhana ini mencakup:
+- Beranda: Halaman utama dengan bagian pengenalan
+- Kursus: Konten pendidikan yang tersedia
+- Instruktur: Informasi mengenai pengajar
+- Sumber Daya: Materi pembelajaran tambahan
+- Tentang Kami: Informasi mengenai platform

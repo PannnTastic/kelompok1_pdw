@@ -1,0 +1,77 @@
+/**
+ * LearnHub E-Learning Platform - Use Case Diagram
+ * 
+ *                               +---------------------+
+ *                               |                     |
+ *                               |    LearnHub System  |
+ * +---------------+             |                     |             +---------------+
+ * |               |             +---------------------+             |               |
+ * |               |                      ^                          |               |
+ * |    Student    |                      |                          |   Instructor  |
+ * |               |                      |                          |               |
+ * |               |                      |                          |               |
+ * +-------+-------+                      |                          +-------+-------+
+ *         |                              |                                  |
+ *         |                              |                                  |
+ *         v                              |                                  v
+ * +-------+-------+               +------+------+                  +-------+-------+
+ * |  Browse       |               |  Sign Up     |                  | Create Course |
+ * |  Courses      +-------------->|  Free        |<-----------------+               |
+ * +---------------+               +-------------+                   +---------------+
+ *         |                              ^                                  |
+ *         |                              |                                  |
+ *         v                              |                                  v
+ * +-------+-------+               +------+------+                  +-------+-------+
+ * |  View Course   |               |             |                  | Manage        |
+ * |  Details       |               |   Login     |                  | Course Content|
+ * +-------+-------+               +------+------+                   +---------------+
+ *         |                              ^                                  |
+ *         |                              |                                  |
+ *         v                              |                                  v
+ * +-------+-------+               +------+------+                  +-------+-------+
+ * |  Enroll in    +-------------->|             |<-----------------+ View Student  |
+ * |  Course       |               |   Access    |                  | Progress      |
+ * +---------------+               |   Account   |                  +---------------+
+ *         |                       |             |                          |
+ *         |                       +------+------+                          |
+ *         v                              ^                                 v
+ * +-------+-------+                      |                         +-------+-------+
+ * |  Access       |                      |                         |  Provide      |
+ * |  Course       +----------------------+------------------------->+  Feedback     |
+ * |  Materials    |                                                |               |
+ * +-------+-------+                                                +---------------+
+ *         |
+ *         |
+ *         v
+ * +-------+-------+
+ * |  Track         |
+ * |  Learning      |
+ * |  Progress      |
+ * +---------------+
+ *         |
+ *         |
+ *         v
+ * +-------+-------+
+ * |  Get           |
+ * |  Support       |
+ * |  Contact       |
+ * +---------------+
+ *
+ * Actors:
+ * 1. Student - Primary user who browses, enrolls and takes courses
+ * 2. Instructor - Creates and manages courses, provides feedback
+ * 
+ * Main Use Cases:
+ * - Browse Courses: Students can explore available courses
+ * - View Course Details: Students can see detailed course information
+ * - Enroll in Course: Students can register for specific courses
+ * - Access Course Materials: Students can view learning content
+ * - Track Learning Progress: Students can monitor their advancement
+ * - Get Support/Contact: Users can reach out for assistance
+ * - Sign Up Free: New users can create accounts
+ * - Login: Users can access their accounts
+ * - Create Course: Instructors can develop new courses
+ * - Manage Course Content: Instructors can update course materials
+ * - View Student Progress: Instructors can monitor student performance
+ * - Provide Feedback: Instructors can give feedback to students
+ */

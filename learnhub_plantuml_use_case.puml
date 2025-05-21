@@ -1,0 +1,67 @@
+@startuml LearnHub_Use_Case
+
+' Define actors
+actor Student
+actor Instructor
+actor "System Administrator" as Admin
+
+' Define system boundary
+rectangle "LearnHub E-Learning Platform" {
+  ' Student use cases
+  usecase "Browse Courses" as UC1
+  usecase "View Course Details" as UC2
+  usecase "Sign Up" as UC3
+  usecase "Login" as UC4
+  usecase "Enroll in Course" as UC5
+  usecase "Access Course Materials" as UC6
+  usecase "Track Learning Progress" as UC7
+  usecase "Contact Support" as UC8
+  
+  ' Instructor use cases
+  usecase "Create Course" as UC9
+  usecase "Manage Course Content" as UC10
+  usecase "View Student Progress" as UC11
+  usecase "Provide Feedback" as UC12
+  
+  ' Admin use cases
+  usecase "Manage Users" as UC13
+  usecase "System Maintenance" as UC14
+  usecase "Content Moderation" as UC15
+}
+
+' Relationships for Student
+Student --> UC1
+Student --> UC2
+Student --> UC3
+Student --> UC4
+Student --> UC5
+Student --> UC6
+Student --> UC7
+Student --> UC8
+
+' Relationships for Instructor
+Instructor --> UC4
+Instructor --> UC9
+Instructor --> UC10
+Instructor --> UC11
+Instructor --> UC12
+
+' Relationships for Admin
+Admin --> UC4
+Admin --> UC13
+Admin --> UC14
+Admin --> UC15
+
+' Include relationships
+UC5 ..> UC4 : <<include>>
+UC6 ..> UC4 : <<include>>
+UC7 ..> UC4 : <<include>>
+UC9 ..> UC4 : <<include>>
+UC10 ..> UC4 : <<include>>
+UC11 ..> UC4 : <<include>>
+UC12 ..> UC4 : <<include>>
+
+' Extend relationships
+UC2 ..> UC5 : <<extend>>
+
+@enduml

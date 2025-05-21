@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Use Case Diagram</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4e42d4;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .diagram {
+            width: 100%;
+            overflow: auto;
+            margin-bottom: 30px;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+        .explanation {
+            margin-top: 30px;
+        }
+        .actor {
+            margin-bottom: 20px;
+        }
+        .actor h3 {
+            color: #4e42d4;
+            margin-bottom: 10px;
+        }
+        .use-case {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LearnHub E-Learning Platform - Use Case Diagram</h1>
+        
+        <div class="diagram">
+            <!-- SVG Use Case Diagram -->
+            <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+                <!-- System Boundary -->
+                <rect x="150" y="50" width="500" height="500" stroke="#4e42d4" stroke-width="2" fill="none" rx="10" ry="10"/>
+                <text x="400" y="80" text-anchor="middle" font-weight="bold" fill="#4e42d4">LearnHub E-Learning Platform</text>
+                
+                <!-- Actors -->
+                <!-- Student -->
+                <circle cx="75" cy="200" r="20" stroke="black" stroke-width="1" fill="white"/>
+                <line x1="75" y1="220" x2="75" y2="270" stroke="black" stroke-width="1"/>
+                <line x1="75" y1="230" x2="40" y2="260" stroke="black" stroke-width="1"/>
+                <line x1="75" y1="230" x2="110" y2="260" stroke="black" stroke-width="1"/>
+                <line x1="75" y1="270" x2="60" y2="320" stroke="black" stroke-width="1"/>
+                <line x1="75" y1="270" x2="90" y2="320" stroke="black" stroke-width="1"/>
+                <text x="75" y="350" text-anchor="middle">Student</text>
+                
+                <!-- Instructor -->
+                <circle cx="725" cy="200" r="20" stroke="black" stroke-width="1" fill="white"/>
+                <line x1="725" y1="220" x2="725" y2="270" stroke="black" stroke-width="1"/>
+                <line x1="725" y1="230" x2="690" y2="260" stroke="black" stroke-width="1"/>
+                <line x1="725" y1="230" x2="760" y2="260" stroke="black" stroke-width="1"/>
+                <line x1="725" y1="270" x2="710" y2="320" stroke="black" stroke-width="1"/>
+                <line x1="725" y1="270" x2="740" y2="320" stroke="black" stroke-width="1"/>
+                <text x="725" y="350" text-anchor="middle">Instructor</text>
+                
+                <!-- Use Cases -->
+                <!-- Student Use Cases -->
+                <ellipse cx="250" cy="150" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="250" y="155" text-anchor="middle">Browse Courses</text>
+                
+                <ellipse cx="250" cy="230" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="250" y="235" text-anchor="middle">View Course Details</text>
+                
+                <ellipse cx="400" cy="150" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="400" y="155" text-anchor="middle">Sign Up</text>
+                
+                <ellipse cx="400" cy="390" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="400" y="395" text-anchor="middle">Login</text>
+                
+                <ellipse cx="250" cy="310" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="250" y="315" text-anchor="middle">Enroll in Course</text>
+                
+                <ellipse cx="250" cy="390" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="250" y="395" text-anchor="middle">Access Course Materials</text>
+                
+                <ellipse cx="250" cy="470" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="250" y="475" text-anchor="middle">Track Progress</text>
+                
+                <!-- Instructor Use Cases -->
+                <ellipse cx="550" cy="150" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="550" y="155" text-anchor="middle">Create Course</text>
+                
+                <ellipse cx="550" cy="230" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="550" y="235" text-anchor="middle">Manage Content</text>
+                
+                <ellipse cx="550" cy="310" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="550" y="315" text-anchor="middle">View Student Progress</text>
+                
+                <ellipse cx="550" cy="390" rx="70" ry="30" stroke="black" stroke-width="1" fill="#f9f9f9"/>
+                <text x="550" y="395" text-anchor="middle">Provide Feedback</text>
+                
+                <!-- Relationships -->
+                <!-- Student relationships -->
+                <line x1="95" y1="200" x2="180" y2="150" stroke="black" stroke-width="1"/>
+                <line x1="95" y1="220" x2="180" y2="230" stroke="black" stroke-width="1"/>
+                <line x1="95" y1="240" x2="180" y2="310" stroke="black" stroke-width="1"/>
+                <line x1="95" y1="260" x2="180" y2="390" stroke="black" stroke-width="1"/>
+                <line x1="95" y1="280" x2="180" y2="470" stroke="black" stroke-width="1"/>
+                <line x1="115" y1="200" x2="330" y2="150" stroke="black" stroke-width="1"/>
+                
+                <!-- Instructor relationships -->
+                <line x1="705" y1="200" x2="620" y2="150" stroke="black" stroke-width="1"/>
+                <line x1="705" y1="220" x2="620" y2="230" stroke="black" stroke-width="1"/>
+                <line x1="705" y1="240" x2="620" y2="310" stroke="black" stroke-width="1"/>
+                <line x1="705" y1="260" x2="620" y2="390" stroke="black" stroke-width="1"/>
+                <line x1="685" y1="200" x2="470" y2="390" stroke="black" stroke-width="1"/>
+                
+                <!-- Include relationships -->
+                <line x1="250" y1="340" x2="330" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="290" y="375" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <line x1="250" y1="360" x2="330" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="290" y="385" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <line x1="250" y1="440" x2="330" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="290" y="415" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <line x1="550" y1="180" x2="470" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="510" y="285" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <line x1="550" y1="260" x2="470" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="510" y="325" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <line x1="550" y1="340" x2="470" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="510" y="365" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <line x1="550" y1="360" x2="470" y2="390" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="510" y="375" font-size="10" fill="#4e42d4">«include»</text>
+                
+                <!-- Extend relationships -->
+                <line x1="250" y1="260" x2="250" y2="280" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="280" y="270" font-size="10" fill="#4e42d4">«extend»</text>
+            </svg>
+        </div>
+        
+        <div class="explanation">
+            <h2>Use Case Description</h2>
+            
+            <div class="actor">
+                <h3>Student</h3>
+                <div class="use-case">
+                    <strong>Browse Courses:</strong> Students can explore all available courses on the platform.
+                </div>
+                <div class="use-case">
+                    <strong>View Course Details:</strong> Students can see detailed information about specific courses.
+                </div>
+                <div class="use-case">
+                    <strong>Sign Up:</strong> New users can create an account on the platform.
+                </div>
+                <div class="use-case">
+                    <strong>Login:</strong> Students can authenticate and access their account.
+                </div>
+                <div class="use-case">
+                    <strong>Enroll in Course:</strong> Students can register for a specific course.
+                </div>
+                <div class="use-case">
+                    <strong>Access Course Materials:</strong> Students can view learning content for enrolled courses.
+                </div>
+                <div class="use-case">
+                    <strong>Track Learning Progress:</strong> Students can monitor their advancement in courses.
+                </div>
+            </div>
+            
+            <div class="actor">
+                <h3>Instructor</h3>
+                <div class="use-case">
+                    <strong>Create Course:</strong> Instructors can develop new courses on the platform.
+                </div>
+                <div class="use-case">
+                    <strong>Manage Course Content:</strong> Instructors can update course materials.
+                </div>
+                <div class="use-case">
+                    <strong>View Student Progress:</strong> Instructors can monitor student performance.
+                </div>
+                <div class="use-case">
+                    <strong>Provide Feedback:</strong> Instructors can give feedback to students.
+                </div>
+                <div class="use-case">
+                    <strong>Login:</strong> Instructors can authenticate and access their account.
+                </div>
+            </div>
+            
+            <h2>Relationships</h2>
+            <div class="use-case">
+                <strong>Include Relationships:</strong> Indicates that a use case includes the behavior of another use case. For example, "Enroll in Course" includes "Login" because a user must be logged in to enroll.
+            </div>
+            <div class="use-case">
+                <strong>Extend Relationships:</strong> Indicates that a use case can be extended by another use case. For example, "View Course Details" can be extended by "Enroll in Course" when a student decides to enroll after viewing course details.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
