@@ -56,3 +56,14 @@ Menu sederhana ini mencakup:
 - Instruktur: Informasi mengenai pengajar
 - Sumber Daya: Materi pembelajaran tambahan
 - Tentang Kami: Informasi mengenai platform
+
+## Use Case Diagram
+Berikut adalah diagram use case untuk aplikasi LearnHub:
+
+![Use Case Diagram LearnHub](learnhub_use_case_diagram.png)
+
+Dengan ukuran kustom:
+
+<img src="learnhub_use_case_diagram.png" alt="Use Case Diagram LearnHub" width="600">
+
+Untuk melihat diagram use case secara interaktif, buka file `learnhub_use_case_diagram.html` di browser.
